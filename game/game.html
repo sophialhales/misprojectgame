@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game | Student Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body class="game-page">
+    <div class="start-screen" id="startScreen">
+        <h1>PONG</h1>
+        <img id="spaceship" src="media/spaceship.png" alt="Spaceship">
+        <p>Use your mouse to control the left paddle.</p>
+        <div class="difficulty-selection">
+            <button id="easyBtn" class="difficulty-button active" data-difficulty="easy">Easy</button>
+            <button id="mediumBtn" class="difficulty-button" data-difficulty="medium">Medium</button>
+            <button id="hardBtn" class="difficulty-button" data-difficulty="hard">Hard</button>
+        </div>
+        <!-- <button id="startGameButton">Start Game</button> -->
+                    </div>
+    <canvas id="pong" width="800" height="400"></canvas>
+
+                    <div class="game-over-screen" id="gameOverScreen">
+        <h2 id="winnerText"></h2>
+        <p id="finalScore"></p>
+        <button id="playAgainButton">Play Again</button>
+        <button id="backToStartButton">Back to Start</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
